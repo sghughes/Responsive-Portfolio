@@ -274,6 +274,7 @@ p, label {
         padding: 0;
         width: 100%;
     }
+    
     h1 {
      /*background-color:#4aaaa5;*/
      background-color: #A7bea9;
@@ -291,10 +292,9 @@ p, label {
      overflow: hidden;
      min-width: 150px; 
      display: inline-block;
-    line-height: 40px;
+    line-height: 50px;
     padding: 0;  
-       
-        
+              
     }
    
     ul {
@@ -305,8 +305,17 @@ p, label {
 }
 @media screen and (max-width: 768px) {
    
+    body {
+        padding: 0;
+        margin: 0; 
+        box-sizing: border-box;
+    }
+
     .container {
         width: 95%;
+        padding: 0;
+        margin: 0px 10px;
+        box-sizing: border-box;
     }
 
     header {
@@ -314,6 +323,7 @@ p, label {
         padding: 0;
         width: 100%;
     }
+
     h1 {
      /*background-color:#4aaaa5;*/
      background-color: #A7bea9;
@@ -346,31 +356,50 @@ p, label {
     
 }
 @media only screen and (max-width: 640px) {
+    
+    body {
+        padding: 0;
+        margin: 0; 
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0;
+        margin: 50px 10px 10px 0px;
+        box-sizing: border-box;
+    }
+  
     h1 {
         position: static;
         width: 100%;
         display: block;
         padding-bottom: 0;
     }
-    .container {
-        width: 100%;
-        margin-top: 50px;
-        
+    
+    .header {
+        max-width: 100%;
+        position: relative;
     }
+   
     
     ul {
+        clear: both;
         position: static;
+        box-sizing: border-box;
+        float: right;
+
         width: 100%;
-        display: flex;
+        display: block;
         padding: 0;
         text-align: center;
         background-color: #fff;
         margin: 0;
         line-height: 30px;
         border-bottom: 1px solid #ccc;
-
      
     }
+
     .portfolio2, .portfolio3, .portfolio4, .portfolio5 {
         clear: both;
         position: relative;
